@@ -1,7 +1,14 @@
 #!/bin/bash
 
+# Universal test script in bash
+# Author: Jakub Mašek
+# Github: https://github.com/masekjakub/universal-tester
+# License: MIT
+
+# set path to your program
 PROG_PATH=cat
-TESTS_FOLDER=tests/*
+# set path to directory with tests
+TESTS_FOLDER=tests
 
 RED='\033[0;31m'
 GRE='\033[0;32m'
@@ -57,7 +64,8 @@ runtest() {
     fi
 }
 
-for TEST in $TESTS_FOLDER; do 
+# for each test folder
+for TEST in $TESTS_FOLDER/*; do 
     runtest
 done
 
