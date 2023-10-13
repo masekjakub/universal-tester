@@ -19,6 +19,10 @@ bash test.sh
 - Simply run ```bash test.sh``` and first two tests should pass and the third one should fail
 - Outputs can be found in the tests folder
 
+- Expected output:
+
+  ![expected example output](doc/example_out.png)
+
 ## Folder structure
 ```
 .
