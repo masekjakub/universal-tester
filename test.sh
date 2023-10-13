@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PRG_NAME=cat
+PROG_PATH=cat
 TESTS_FOLDER=tests/*
 
 RED='\033[0;31m'
@@ -21,7 +21,7 @@ runtest() {
         ARGS="$ARGS $arg"
     done
     start=$(date +%s%3N)
-    cat $TEST/*.input 2>/dev/null | $PRG_NAME $ARGS > $TEST/out.myout 2> $TEST/out.stderr
+    cat $TEST/*.input 2>/dev/null | $PROG_PATH $ARGS > $TEST/out.myout 2> $TEST/out.stderr
     retcode=$?
     end=$(date +%s%3N)
     elapsed=$((end-start))

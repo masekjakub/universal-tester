@@ -11,7 +11,7 @@ bash test.sh
 - Create a folder for each test
 - Create a input files as shown in the example
 - Create a .refout file with the expected output
-- In the test.sh script change the name of the executable (for examle: ./myprog) and the name of the folder containing the tests (lines 3 and 4)
+- In the test.sh script change the path to the executable (for examle: ./myprog) and the name of the folder containing the tests (lines 3 and 4)
 - Run the script ```bash test.sh```
 - Results will be printed in the terminal and outputs saved in the tests folder
 
